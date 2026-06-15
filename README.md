@@ -39,42 +39,51 @@ Joining a computer to a domain allows centralized login, management, and securit
 sysdm.cpl
 ipconfig /all
 whoami
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+```
 
 ## Screenshots
 
-Screenshots will be added as I complete each part of the lab.
+### Active Directory OU Structure
+![Active Directory OU Structure](screenshots/ad-ou-structure.png)
+
+### Client Moved to Workstations OU
+![Client Moved to Workstations OU](screenshots/ad-client-moved-to-workstations.png)
+
+### User Group Membership
+![User Group Membership](screenshots/ad-user-group-membership.png)
+
+### Test Users Created
+![Test Users Created](screenshots/test-users-created.png)
+
+### Computer Object Proof
+![Computer Object Proof](screenshots/Proof%20of%20computer.png)
+
+### Sales Folder NTFS Permissions
+![Sales Folder NTFS Permissions](screenshots/sales-folders-ntfs-permissions.png)
+
+### Client Accessing Shares
+![Client Accessing Shares](screenshots/client-access-shares.png)
+
+### Diagnosing Shared Folder Issue
+![Diagnosing Shared Folder Issue](screenshots/diagnosing-problem-with-finding-folder.png)
+
+### Port 445 Open Before Firewall Block
+![Port 445 Open Before Firewall Block](screenshots/port-445-open-before-firewall-block.png)
+
+### Port 445 Blocked on Client
+![Port 445 Blocked on Client](screenshots/port-445-blocked-in-client.png)
+
+### Port 445 Blocked but Ping Still Works
+![Port 445 Blocked but Ping Still Works](screenshots/port-445-blocked-ping-still-works.png)
+
+### Port 445 Firewall Rule
+![Port 445 Firewall Rule](screenshots/block-port-445-rule.png)
+
+### Firewall 445 Removed
+![Firewall 445 Removed](screenshots/firewall-445-removed.png)
+
+### Port 445 Restored
+![Port 445 Restored](screenshots/port-445-restored.png)
 
 ## Lab Checkpoint 1: Active Directory Foundation
 
@@ -114,14 +123,13 @@ Share permissions control access over the network. NTFS permissions control acce
 Port 445 is used by SMB for Windows file sharing. Blocking it can stop access to shared folders over the network. Restoring it allows file sharing to work again.
 
 ### Screenshot Notes
-Screenshots to capture later:
+Screenshots captured:
 - Active Directory OU structure
 - Test users and groups
 - Shared folder permissions
 - NTFS security permissions
 - Firewall rule for port 445
-- Successful access to the shared folder from the client
+- Client access to shared folders
 
 ### What I Learned
 This checkpoint helped me understand how Active Directory organizes users, computers, and groups. I also practiced how permissions work for shared folders and how firewall rules can affect network file sharing.
-
